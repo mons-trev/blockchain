@@ -249,3 +249,63 @@ for tr in range(10):
 전체 코드는 위와 같으며, 출력은 0~10 block 의 json 값이 나올 것 입니다.
 밑의 hash 값 체크하기 코드는 이전 블록의 해싱된 값이 현재 블록의 Hash 에 잘 담겼는지 확인하는 절차입니다. 잘 작동된다면 10개의
 true가 출력될 것입니다.
+
+
+출력물
+```json
+{
+    "TxID": 0,
+    "Hash": "This is the genesis block",
+    "Nonce": 0,
+    "Output": [
+        {
+            "Value": 10,
+            "ScriptPubKey": "-----BEGIN PUBLIC KEY-----\nMIIBtjCCASsGByqGSM44BAEwggEeAoGBAOXm6AFaOspc5AsKP6QHePDefDTKu7D1\nvN/l98PmuCWMVnmxy9FTr6aH9IMBERKkingbn+R5Blb+1PtCyRbe7yU3ND8B9vPP\nZHPcfRMJWKWqTT/UAk8ySMVaL5Em996/8eeFNse0FGS35imtFuLWur1efg+5GMNC\nx+02ATRqMnrlAhUArHDjoQG8fZLNiBCA3sQTcz5AvoECgYBAfJh8LeoigKnSCdxJ\nvCQ3j6gw8r3ZYI9GZJ++6igh7hSEuIfcpgFbN5S/mAiDIFDEJ1G9ysl98ZswlO3J\nDxteOwZ3QKHi0th23S/i1zsExLyzkRodWgzS7s0NePBYEkGdd6PHn2dCYC/rpYYg\nqptiE+cZJtYXOOLR8Ril8x4stgOBhAACgYBccnwJtvTexa6QIIBo+XTP3FK90qJt\n0ql4gc4jwroErrHOjh4oujS74UUOFR1/pPvBn97G1356BqAHcLIhvSjn5vmoQG+l\nwpftVkpsHKq/aF5KpkrUJKiT5tWUmbKmNhMdAgdlQFlitWgR1rofJNQylqo0z4Ix\ndRS9WRaPf2PmOg==\n-----END PUBLIC KEY----- OP_CHECKSIG"
+        }
+    ]
+}
+{
+    "TxID": 1,
+    "Hash": "93a1a2856e6fe59113e2f742aa49b5548c305daf0fc126bc88ee668b25167414",
+    "Nonce": 23,
+    "Output": [
+        {
+            "Value": 1,
+            "ScriptPubKey": "-----BEGIN PUBLIC KEY-----\nMIIBuDCCASwGByqGSM44BAEwggEfAoGBAPjt87xg7Iwox2VOfg3zZrclJ3p+vXdU\nYkd0RmEBVBAcRqRpNl+CQmUHMbEgGrykAMem3VVpIXPyOZHS4eQFRd/W6r+fkOFx\nQYOkpeJprQdvwrvenOP8mBxFDgkToSqUG7M3ayXcu89EOfzkfSmVq2+yWuagszo+\n5tlgENc5nbwzAhUAmYvQ2xcnpr4vGWdMwbZGIZy0POsCgYEAqZpz4FhHyOWSpy7h\nzAJ7S5tgLQ9XkHMoHUU/IXzUATTW4CG+6NTCA9lm+9Dwdr8rZlCvS7hpcoRiOmzw\nPgNvLUJw4D5MBRWe/i73g69hJkd14Dzy06+I8ohuoBcju6lzT2BqqeUmrS3um2Qd\ngM/R5jihs6jSO59mK9TLaSNZUyQDgYUAAoGBAKfhkzoHR/ml2zJNdnwT/L3yvzJ+\n4ZQThSJP/F9bzROflrM+i4/pMDQCGygmvyKnYxPytQJmauEgWEE5KoBvrugA2Upa\nAp/V6eSybRMwXs2oEYDcLAVOddaEKN938VoU9nFq5FsuOSYRzNQ+3HAQAS0WEh00\nq/ORXNXyNGatmhnz\n-----END PUBLIC KEY----- OP_CHECKSIG"
+        },
+        {
+            "Value": 9,
+            "ScriptPubKey": "-----BEGIN PUBLIC KEY-----\nMIIBtjCCASsGByqGSM44BAEwggEeAoGBAOXm6AFaOspc5AsKP6QHePDefDTKu7D1\nvN/l98PmuCWMVnmxy9FTr6aH9IMBERKkingbn+R5Blb+1PtCyRbe7yU3ND8B9vPP\nZHPcfRMJWKWqTT/UAk8ySMVaL5Em996/8eeFNse0FGS35imtFuLWur1efg+5GMNC\nx+02ATRqMnrlAhUArHDjoQG8fZLNiBCA3sQTcz5AvoECgYBAfJh8LeoigKnSCdxJ\nvCQ3j6gw8r3ZYI9GZJ++6igh7hSEuIfcpgFbN5S/mAiDIFDEJ1G9ysl98ZswlO3J\nDxteOwZ3QKHi0th23S/i1zsExLyzkRodWgzS7s0NePBYEkGdd6PHn2dCYC/rpYYg\nqptiE+cZJtYXOOLR8Ril8x4stgOBhAACgYBccnwJtvTexa6QIIBo+XTP3FK90qJt\n0ql4gc4jwroErrHOjh4oujS74UUOFR1/pPvBn97G1356BqAHcLIhvSjn5vmoQG+l\nwpftVkpsHKq/aF5KpkrUJKiT5tWUmbKmNhMdAgdlQFlitWgR1rofJNQylqo0z4Ix\ndRS9WRaPf2PmOg==\n-----END PUBLIC KEY----- OP_CHECKSIG"
+        }
+    ]
+}
+{
+    "TxID": 2,
+    "Hash": "0081ace11b53db52665bb3b4794f4ffdbb8dea84d2608b90a82e9d21d3283ee5",
+    "Nonce": 4,
+    "Output": [
+        {
+            "Value": 2,
+            "ScriptPubKey": "-----BEGIN PUBLIC KEY-----\nMIIBuDCCASwGByqGSM44BAEwggEfAoGBAPjt87xg7Iwox2VOfg3zZrclJ3p+vXdU\nYkd0RmEBVBAcRqRpNl+CQmUHMbEgGrykAMem3VVpIXPyOZHS4eQFRd/W6r+fkOFx\nQYOkpeJprQdvwrvenOP8mBxFDgkToSqUG7M3ayXcu89EOfzkfSmVq2+yWuagszo+\n5tlgENc5nbwzAhUAmYvQ2xcnpr4vGWdMwbZGIZy0POsCgYEAqZpz4FhHyOWSpy7h\nzAJ7S5tgLQ9XkHMoHUU/IXzUATTW4CG+6NTCA9lm+9Dwdr8rZlCvS7hpcoRiOmzw\nPgNvLUJw4D5MBRWe/i73g69hJkd14Dzy06+I8ohuoBcju6lzT2BqqeUmrS3um2Qd\ngM/R5jihs6jSO59mK9TLaSNZUyQDgYUAAoGBAKfhkzoHR/ml2zJNdnwT/L3yvzJ+\n4ZQThSJP/F9bzROflrM+i4/pMDQCGygmvyKnYxPytQJmauEgWEE5KoBvrugA2Upa\nAp/V6eSybRMwXs2oEYDcLAVOddaEKN938VoU9nFq5FsuOSYRzNQ+3HAQAS0WEh00\nq/ORXNXyNGatmhnz\n-----END PUBLIC KEY----- OP_CHECKSIG"
+        },
+        {
+            "Value": 8,
+            "ScriptPubKey": "-----BEGIN PUBLIC KEY-----\nMIIBtjCCASsGByqGSM44BAEwggEeAoGBAOXm6AFaOspc5AsKP6QHePDefDTKu7D1\nvN/l98PmuCWMVnmxy9FTr6aH9IMBERKkingbn+R5Blb+1PtCyRbe7yU3ND8B9vPP\nZHPcfRMJWKWqTT/UAk8ySMVaL5Em996/8eeFNse0FGS35imtFuLWur1efg+5GMNC\nx+02ATRqMnrlAhUArHDjoQG8fZLNiBCA3sQTcz5AvoECgYBAfJh8LeoigKnSCdxJ\nvCQ3j6gw8r3ZYI9GZJ++6igh7hSEuIfcpgFbN5S/mAiDIFDEJ1G9ysl98ZswlO3J\nDxteOwZ3QKHi0th23S/i1zsExLyzkRodWgzS7s0NePBYEkGdd6PHn2dCYC/rpYYg\nqptiE+cZJtYXOOLR8Ril8x4stgOBhAACgYBccnwJtvTexa6QIIBo+XTP3FK90qJt\n0ql4gc4jwroErrHOjh4oujS74UUOFR1/pPvBn97G1356BqAHcLIhvSjn5vmoQG+l\nwpftVkpsHKq/aF5KpkrUJKiT5tWUmbKmNhMdAgdlQFlitWgR1rofJNQylqo0z4Ix\ndRS9WRaPf2PmOg==\n-----END PUBLIC KEY----- OP_CHECKSIG"
+        }
+    ]
+}
+
+...
+
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+Process finished with exit code 0
+```
